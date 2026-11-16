@@ -1,0 +1,838 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Products & Materials | Sky Infra Industries</title>
+  <meta name="description" content="Explore the upcoming product catalogue from Sky Infra Industries. We specialise in PVC pipes, HDPE pipes, Steel Pipes, All types of Pipes and construction materials. Contact us for your material requirements.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://skyinfraindustries.com/products.html">
+
+  <!-- Favicons -->
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Products & Materials | Sky Infra Industries">
+  <meta property="og:description" content="Our product catalogue is taking shape. Get in touch with Sky Infra Industries for PVC pipes, HDPE pipes, Steel Pipes, All types of Pipes and construction materials.">
+  <meta property="og:url" content="https://skyinfraindustries.com/products.html">
+  <meta property="og:image" content="https://skyinfraindustries.com/images/sky-infra-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#101e30">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* =========================================
+       PRODUCTS PAGE — UNDER CONSTRUCTION
+    ========================================= */
+
+    .products-stage {
+      position: relative;
+      min-height: 690px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      isolation: isolate;
+      color: #fff;
+      background:
+        radial-gradient(ellipse at 78% 48%, rgba(45, 111, 166, .25), transparent 36%),
+        radial-gradient(ellipse at 12% 90%, rgba(36, 91, 132, .2), transparent 35%),
+        linear-gradient(125deg, #0b1727 0%, #12243a 52%, #0b192a 100%);
+    }
+
+    .products-stage::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: .2;
+      background-image:
+        linear-gradient(rgba(255,255,255,.09) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.09) 1px, transparent 1px);
+      background-size: 54px 54px;
+      mask-image: linear-gradient(to bottom, transparent, #000 18%, #000 85%, transparent);
+      animation: blueprint-drift 24s linear infinite;
+    }
+
+    .products-stage::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 520px;
+      height: 520px;
+      right: -170px;
+      top: 50%;
+      border: 1px solid rgba(139, 190, 224, .14);
+      border-radius: 50%;
+      transform: translateY(-50%);
+      box-shadow:
+        0 0 0 45px rgba(139, 190, 224, .025),
+        0 0 0 90px rgba(139, 190, 224, .025),
+        0 0 0 135px rgba(139, 190, 224, .02);
+      animation: orbit-pulse 7s ease-in-out infinite;
+    }
+
+    .products-inner {
+      width: min(1160px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 100px 0 110px;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .products-copy {
+      position: relative;
+      z-index: 2;
+      animation: content-enter .9s ease both;
+    }
+
+    .products-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 15px;
+      margin-bottom: 28px;
+      border: 1px solid rgba(130, 190, 226, .3);
+      border-radius: 50px;
+      background: rgba(89, 155, 198, .1);
+      color: #b9dff7;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #74d9b0;
+      box-shadow: 0 0 12px rgba(116, 217, 176, .8);
+      animation: status-blink 1.8s ease-in-out infinite;
+    }
+
+    .products-copy h1 {
+      max-width: 650px;
+      margin: 0 0 22px;
+      color: #fff;
+      font-family: var(--font-heading, inherit);
+      font-size: clamp(43px, 6vw, 76px);
+      font-weight: 800;
+      line-height: 1.04;
+      letter-spacing: -2.5px;
+    }
+
+    .products-copy h1 span {
+      display: block;
+      color: #8fc6e9;
+    }
+
+    .products-description {
+      max-width: 530px;
+      margin: 0 0 32px;
+      color: #b8c8d8;
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .products-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .products-actions .btn {
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+    }
+
+    .products-actions .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .products-actions .btn-primary {
+      box-shadow: 0 10px 28px rgba(54, 135, 190, .22);
+    }
+
+    .products-actions .btn-outline {
+      color: #e7f3fb;
+      border-color: rgba(220, 239, 252, .35);
+    }
+
+    .products-actions .btn-outline:hover {
+      background: rgba(255,255,255,.08);
+    }
+
+    .products-visual {
+      position: relative;
+      min-height: 430px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: visual-enter 1.1s .15s ease both;
+    }
+
+    .visual-orbit {
+      position: absolute;
+      width: min(410px, 100%);
+      aspect-ratio: 1;
+      border: 1px solid rgba(160, 207, 237, .2);
+      border-radius: 50%;
+      animation: orbit-rotate 32s linear infinite;
+    }
+
+    .visual-orbit::before,
+    .visual-orbit::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(160, 207, 237, .12);
+      border-radius: 50%;
+    }
+
+    .visual-orbit::before {
+      inset: 30px;
+    }
+
+    .visual-orbit::after {
+      inset: 65px;
+    }
+
+    .orbit-point {
+      position: absolute;
+      top: 16%;
+      left: 15%;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #9bd6f7;
+      box-shadow: 0 0 22px #72bde9;
+    }
+
+    .eagle-emblem {
+      position: relative;
+      z-index: 2;
+      width: 190px;
+      height: 190px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(173, 215, 241, .23);
+      border-radius: 50%;
+      background: linear-gradient(145deg, rgba(255,255,255,.1), rgba(255,255,255,.025));
+      box-shadow:
+        0 0 65px rgba(69, 150, 202, .13),
+        inset 0 0 35px rgba(255,255,255,.035);
+      backdrop-filter: blur(8px);
+      animation: emblem-float 5s ease-in-out infinite;
+    }
+
+    .eagle-emblem img {
+      width: 112px;
+      height: 112px;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 18px rgba(0,0,0,.2));
+    }
+
+    .floating-tag {
+      position: absolute;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 12px 16px;
+      border: 1px solid rgba(178, 216, 240, .2);
+      border-radius: 10px;
+      background: rgba(16, 37, 57, .82);
+      color: #d8eaf6;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .3px;
+      box-shadow: 0 12px 35px rgba(0,0,0,.2);
+      backdrop-filter: blur(10px);
+      animation: tag-float 5s ease-in-out infinite;
+    }
+
+    .floating-tag svg {
+      width: 17px;
+      height: 17px;
+      stroke: #91c9eb;
+      fill: none;
+      stroke-width: 1.7;
+    }
+
+    .tag-one {
+      top: 55px;
+      right: 0;
+    }
+
+    .tag-two {
+      bottom: 70px;
+      left: 0;
+      animation-delay: -2.2s;
+    }
+
+    .tag-three {
+      right: 8px;
+      bottom: 10px;
+      animation-delay: -1.2s;
+    }
+
+    .products-progress {
+      width: min(430px, 100%);
+      margin-top: 42px;
+    }
+
+    .progress-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 11px;
+      color: #a9bdcf;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .progress-track {
+      height: 5px;
+      overflow: hidden;
+      border-radius: 20px;
+      background: rgba(255,255,255,.12);
+    }
+
+    .progress-fill {
+      width: 68%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #4f9dca, #a5d9f4);
+      box-shadow: 0 0 16px rgba(115, 193, 237, .5);
+      transform-origin: left;
+      animation: progress-glow 3s ease-in-out infinite;
+    }
+
+    .progress-note {
+      margin: 12px 0 0;
+      color: #8199ad;
+      font-size: 11px;
+      line-height: 1.6;
+    }
+
+    /* Supporting section */
+
+    .products-note {
+      padding: 78px 24px;
+      background: var(--off-white, #f6f8fa);
+    }
+
+    .products-note-inner {
+      width: min(1050px, 100%);
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .products-note-inner h2 {
+      margin: 0 0 14px;
+      color: var(--navy, #14263b);
+      font-size: clamp(26px, 3.5vw, 38px);
+      line-height: 1.2;
+    }
+
+    .products-note-inner > p {
+      max-width: 660px;
+      margin: 0 auto;
+      color: var(--text-light, #667487);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .material-pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .material-pill {
+      padding: 11px 19px;
+      border: 1px solid var(--border, #dfe5eb);
+      border-radius: 50px;
+      background: #fff;
+      color: var(--navy, #14263b);
+      font-size: 13px;
+      font-weight: 700;
+      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+
+    .material-pill:hover {
+      transform: translateY(-3px);
+      border-color: var(--blue, #438bb9);
+      box-shadow: 0 8px 20px rgba(20, 55, 80, .08);
+    }
+
+    @keyframes blueprint-drift {
+      from { background-position: 0 0; }
+      to { background-position: 54px 54px; }
+    }
+
+    @keyframes orbit-pulse {
+      0%, 100% { opacity: .65; transform: translateY(-50%) scale(.96); }
+      50% { opacity: 1; transform: translateY(-50%) scale(1.04); }
+    }
+
+    @keyframes orbit-rotate {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes emblem-float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-13px); }
+    }
+
+    @keyframes tag-float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-9px); }
+    }
+
+    @keyframes status-blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: .45; }
+    }
+
+    @keyframes progress-glow {
+      0%, 100% { filter: brightness(1); }
+      50% { filter: brightness(1.35); }
+    }
+
+    @keyframes content-enter {
+      from { opacity: 0; transform: translateY(22px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes visual-enter {
+      from { opacity: 0; transform: translateX(25px) scale(.97); }
+      to { opacity: 1; transform: translateX(0) scale(1); }
+    }
+
+    @media (max-width: 900px) {
+      .products-inner {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 85px 0 80px;
+      }
+
+      .products-copy {
+        text-align: center;
+      }
+
+      .products-copy h1,
+      .products-description {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .products-actions {
+        justify-content: center;
+      }
+
+      .products-progress {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+      }
+
+      .products-visual {
+        min-height: 390px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .products-stage {
+        min-height: auto;
+      }
+
+      .products-inner {
+        width: min(100% - 36px, 500px);
+        padding: 72px 0 65px;
+        gap: 12px;
+      }
+
+      .products-copy h1 {
+        font-size: clamp(40px, 12vw, 56px);
+        letter-spacing: -1.8px;
+      }
+
+      .products-description {
+        font-size: 14px;
+      }
+
+      .products-status {
+        font-size: 9px;
+        letter-spacing: 1.4px;
+      }
+
+      .products-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .products-actions .btn {
+        width: 100%;
+      }
+
+      .products-visual {
+        min-height: 330px;
+      }
+
+      .visual-orbit {
+        width: 300px;
+      }
+
+      .eagle-emblem {
+        width: 150px;
+        height: 150px;
+      }
+
+      .eagle-emblem img {
+        width: 90px;
+        height: 90px;
+      }
+
+      .floating-tag {
+        padding: 9px 11px;
+        font-size: 10px;
+      }
+
+      .tag-one { top: 35px; right: -3px; }
+      .tag-two { bottom: 48px; left: -3px; }
+      .tag-three { right: -3px; bottom: 0; }
+
+      .products-note {
+        padding: 60px 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .products-stage *,
+      .products-stage *::before,
+      .products-stage *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Products & Materials",
+    "url": "https://skyinfraindustries.com/products.html",
+    "description": "The upcoming product catalogue from Sky Infra Industries, covering PVC pipes, HDPE pipes, Steel Pipes, All types of Pipes and construction materials.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Sky Infra Industries",
+      "url": "https://skyinfraindustries.com/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-container">
+
+      <a href="index.html" class="brand-logo" aria-label="Sky Infra Industries home">
+        <img
+          src="images/sky-infra-logo.png"
+          alt="Sky Infra Industries"
+          width="220"
+          height="70"
+        >
+      </a>
+
+      <button
+        class="mobile-menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-navigation" id="main-navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About Us</a></li>
+          <li><a class="nav-link active" href="products.html" aria-current="page">Products</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary header-cta">Get in Touch</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- UNDER CONSTRUCTION HERO -->
+    <section class="products-stage">
+
+      <div class="products-inner">
+
+        <div class="products-copy">
+
+          <div class="products-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            Catalogue in development
+          </div>
+
+          <h1>
+            Something
+            <span>Solid Is</span>
+            Taking Shape.
+          </h1>
+
+          <p class="products-description">
+            We're putting together our product catalogue to make exploring
+            construction materials easier. From Pipes to a wider
+            range of construction essentials, there's more to come.
+          </p>
+
+          <div class="products-actions">
+            <a href="contact.html" class="btn btn-primary">
+              Enquire About Materials
+              <span aria-hidden="true">→</span>
+            </a>
+
+            <a href="about.html" class="btn btn-outline">
+              Discover Our Company
+            </a>
+          </div>
+
+          <div class="products-progress">
+            <div class="progress-heading">
+              <span>Building the catalogue</span>
+              <span>In progress</span>
+            </div>
+
+            <div
+              class="progress-track"
+              role="progressbar"
+              aria-label="Product catalogue development"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuetext="In progress"
+            >
+              <div class="progress-fill"></div>
+            </div>
+
+            <p class="progress-note">
+              We're working on presenting our materials in a clearer,
+              more useful way. Please contact us for current requirements.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- ANIMATED BRAND VISUAL -->
+        <div class="products-visual" aria-hidden="true">
+
+          <div class="visual-orbit">
+            <span class="orbit-point"></span>
+          </div>
+
+          <div class="eagle-emblem">
+            <img
+              src="images/sky-infra-eagle.png"
+              alt=""
+              width="112"
+              height="112"
+            >
+          </div>
+
+          <div class="floating-tag tag-one">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 7h16M4 12h16M4 17h16"></path>
+              <path d="M7 4v16M17 4v16"></path>
+            </svg>
+            Quality Materials
+          </div>
+
+          <div class="floating-tag tag-two">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 12h18M12 3v18"></path>
+              <circle cx="12" cy="12" r="8"></circle>
+            </svg>
+            Built on Trust
+          </div>
+
+          <div class="floating-tag tag-three">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 18V6l8-3 8 3v12l-8 3-8-3Z"></path>
+              <path d="m4 6 8 3 8-3M12 9v12"></path>
+            </svg>
+            Construction Essentials
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MATERIAL CATEGORIES -->
+    <section class="products-note">
+      <div class="products-note-inner">
+
+        <span class="section-eyebrow">
+          <span class="eyebrow-line"></span>
+          What we're preparing
+        </span>
+
+        <h2>Materials That Help Build What Matters.</h2>
+
+        <p>
+          Our catalogue is being prepared. In the meantime, get in touch
+          with our team to discuss your material requirements and explore
+          how Sky Infra Industries can help.
+        </p>
+
+        <div class="material-pills">
+          <span class="material-pill">All types of Pipes</span>
+          <span class="material-pill">Steel Products</span>
+          <span class="material-pill">Construction Materials</span>
+          <span class="material-pill">Raw Materials</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="cta-inner">
+
+          <div class="cta-content">
+            <span class="section-eyebrow">
+              <span class="eyebrow-line"></span>
+              Let's talk
+            </span>
+
+            <h2>Need Materials Before the Catalogue Launches?</h2>
+
+            <p>
+              Tell us what your project needs. We'd be glad to hear from you
+              and discuss your requirements.
+            </p>
+          </div>
+
+          <div class="cta-action">
+            <a href="contact.html" class="btn btn-light">
+              Contact Our Team <span aria-hidden="true">→</span>
+            </a>
+            <p class="cta-note">Good relationships start with a conversation.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container footer-main">
+
+      <div class="footer-brand">
+        <a href="index.html" aria-label="Sky Infra Industries home">
+          <img
+            src="images/sky-infra-logo.png"
+            alt="Sky Infra Industries"
+            width="210"
+            height="68"
+          >
+        </a>
+
+        <p>
+          Building lasting relationships through trust, quality and
+          competitive pricing in construction materials.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Our Focus</h3>
+        <ul>
+          <li><a href="products.html">All types of Pieps</a></li>
+          <li><a href="products.html">Steel Products</a></li>
+          <li><a href="products.html">Construction Materials</a></li>
+          <li><a href="products.html">Raw Materials</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Get in Touch</h3>
+        <p>
+          Have a requirement or want to know more about our materials?
+        </p>
+        <a href="contact.html" class="text-link">Start a Conversation →</a>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>
+        © <span id="current-year">2026</span> Sky Infra Industries.
+        All rights reserved.
+      </p>
+
+      <div class="footer-legal-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">
+    ↑
+  </button>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>

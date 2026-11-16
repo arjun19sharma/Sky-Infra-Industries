@@ -1,0 +1,519 @@
+
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#071d3b">
+    <meta name="author" content="Sky Infra Industries">
+    <meta name="robots" content="index, follow">
+
+    <title>Terms &amp; Conditions | Sky Infra Industries</title>
+    <meta name="description" content="Read the Terms and Conditions governing the use of the Sky Infra Industries website.">
+    <link rel="canonical" href="https://skyinfraindustries.com/terms-and-conditions.html">
+
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .legal-hero {
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
+            padding: 85px 0 75px;
+            background:
+                radial-gradient(circle at 85% 20%, rgba(142,181,217,.18), transparent 30%),
+                linear-gradient(115deg, #071d3b, #102e55);
+            color: #fff;
+        }
+
+        .legal-hero::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 390px;
+            height: 390px;
+            right: -110px;
+            top: -210px;
+            border: 1px solid rgba(255,255,255,.12);
+            border-radius: 50%;
+            box-shadow: 0 0 0 35px rgba(255,255,255,.025),
+                        0 0 0 75px rgba(255,255,255,.025);
+        }
+
+        .legal-hero .section-eyebrow {
+            color: #a9c6e2;
+        }
+
+        .legal-hero h1 {
+            margin-top: 20px;
+            font-family: var(--font-heading);
+            font-size: clamp(38px, 6vw, 58px);
+            line-height: 1.15;
+            letter-spacing: -2px;
+        }
+
+        .legal-hero p {
+            max-width: 650px;
+            margin-top: 18px;
+            color: #c2d0df;
+            font-size: 15px;
+            line-height: 1.9;
+        }
+
+        .legal-main {
+            padding: 75px 0 100px;
+            background: var(--off-white);
+        }
+
+        .legal-layout {
+            display: grid;
+            grid-template-columns: 250px minmax(0, 1fr);
+            align-items: start;
+            gap: 45px;
+        }
+
+        .legal-sidebar {
+            position: sticky;
+            top: 115px;
+            padding: 25px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+        }
+
+        .legal-sidebar > span {
+            display: block;
+            margin-bottom: 17px;
+            color: var(--muted);
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+        }
+
+        .legal-sidebar a {
+            display: block;
+            padding: 9px 0;
+            color: var(--text-light);
+            font-size: 12px;
+            font-weight: 600;
+            transition: color var(--transition), transform var(--transition);
+        }
+
+        .legal-sidebar a:hover {
+            color: var(--blue);
+            transform: translateX(4px);
+        }
+
+        .legal-content {
+            min-width: 0;
+            padding: clamp(25px, 5vw, 55px);
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .legal-updated {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            margin-bottom: 30px;
+            padding: 9px 13px;
+            background: #edf3f9;
+            border-radius: 5px;
+            color: var(--blue);
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .legal-content section {
+            padding: 25px 0;
+            border-bottom: 1px solid var(--border);
+            scroll-margin-top: 115px;
+        }
+
+        .legal-content section:first-of-type {
+            padding-top: 0;
+        }
+
+        .legal-content section:last-of-type {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        .legal-content h2 {
+            margin-bottom: 13px;
+            color: var(--navy);
+            font-family: var(--font-heading);
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .legal-content p,
+        .legal-content li {
+            color: var(--text-light);
+            font-size: 13px;
+            line-height: 1.95;
+        }
+
+        .legal-content p + p {
+            margin-top: 12px;
+        }
+
+        .legal-content ul {
+            display: grid;
+            gap: 9px;
+            margin: 12px 0 0;
+            padding-left: 20px;
+            list-style: disc;
+        }
+
+        .legal-content li {
+            padding-left: 4px;
+        }
+
+        .legal-content a {
+            color: var(--blue);
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .legal-note {
+            margin-top: 18px;
+            padding: 17px 19px;
+            background: var(--off-white);
+            border-left: 3px solid var(--steel);
+            border-radius: 0 7px 7px 0;
+        }
+
+        @media (max-width: 800px) {
+            .legal-layout {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .legal-sidebar {
+                position: static;
+            }
+
+            .legal-sidebar nav {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0 15px;
+            }
+
+            .legal-hero {
+                padding: 65px 0;
+            }
+
+            .legal-main {
+                padding: 50px 0 70px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .legal-sidebar nav {
+                grid-template-columns: 1fr;
+            }
+
+            .legal-content {
+                padding: 25px 21px;
+                border-radius: 14px;
+            }
+
+            .legal-content h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" id="top">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo" aria-label="Sky Infra Industries Home">
+                <img src="images/sky-infra-logo.png" alt="Sky Infra Industries" width="260" height="130">
+            </a>
+
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" type="button"
+                aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="main-navigation" id="primary-navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="header-cta">Get In Touch <span aria-hidden="true">↗</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="legal-hero">
+            <div class="container">
+                <span class="section-eyebrow">WEBSITE GUIDELINES</span>
+                <h1>Terms &amp; Conditions</h1>
+                <p>
+                    A few straightforward terms for using the Sky Infra Industries
+                    website. By accessing or browsing this website, you agree to
+                    these terms.
+                </p>
+            </div>
+        </section>
+
+        <section class="legal-main">
+            <div class="container legal-layout">
+
+                <aside class="legal-sidebar">
+                    <span>On this page</span>
+                    <nav aria-label="Terms and conditions sections">
+                        <a href="#acceptance">Acceptance</a>
+                        <a href="#website-use">Website use</a>
+                        <a href="#information">Website information</a>
+                        <a href="#products">Products and enquiries</a>
+                        <a href="#intellectual-property">Intellectual property</a>
+                        <a href="#third-party">Third-party services</a>
+                        <a href="#liability">Limitation of liability</a>
+                        <a href="#changes">Changes to terms</a>
+                        <a href="#law">Applicable law</a>
+                        <a href="#contact">Contact us</a>
+                    </nav>
+                </aside>
+
+                <article class="legal-content">
+                    <div class="legal-updated">
+                        <span aria-hidden="true">●</span>
+                        Last updated: 16 November 2026
+                    </div>
+
+                    <section id="acceptance">
+                        <h2>1. Acceptance of these terms</h2>
+                        <p>
+                            This website is operated by Sky Infra Industries.
+                            By visiting or using this website, you acknowledge
+                            that you have read and agree to these Terms and
+                            Conditions. If you do not agree, please discontinue
+                            use of the website.
+                        </p>
+                    </section>
+
+                    <section id="website-use">
+                        <h2>2. Use of this website</h2>
+                        <p>
+                            This website is provided for general information about
+                            Sky Infra Industries, its areas of supply and ways to
+                            contact the business.
+                        </p>
+                        <p>You agree not to:</p>
+                        <ul>
+                            <li>Use the website for unlawful or fraudulent purposes.</li>
+                            <li>Attempt to disrupt, damage or gain unauthorised access to the website or its systems.</li>
+                            <li>Copy, misuse or reproduce website content in a way that infringes applicable rights.</li>
+                        </ul>
+                    </section>
+
+                    <section id="information">
+                        <h2>3. Website information</h2>
+                        <p>
+                            We make reasonable efforts to keep the information on
+                            this website clear and up to date. However, descriptions,
+                            images, categories and other content are provided for
+                            general informational purposes only.
+                        </p>
+                        <p>
+                            Website content may be changed, updated or removed
+                            without prior notice. We do not guarantee that every
+                            page or item of information will always be complete,
+                            current or error-free.
+                        </p>
+                    </section>
+
+                    <section id="products">
+                        <h2>4. Products, pricing and enquiries</h2>
+                        <p>
+                            References to PVC pipes, HDPE pipes, construction
+                            materials and other supplies are intended to describe
+                            our areas of business.
+                        </p>
+                        <p>
+                            Product specifications, availability, pricing, delivery
+                            arrangements and other commercial details must be
+                            confirmed directly with Sky Infra Industries before
+                            making a purchasing decision.
+                        </p>
+                        <p>
+                            Sending an enquiry through email, telephone or WhatsApp
+                            does not by itself create a confirmed order, contract
+                            or commitment to supply. Any transaction will be
+                            subject to separately agreed commercial terms.
+                        </p>
+                    </section>
+
+                    <section id="intellectual-property">
+                        <h2>5. Intellectual property</h2>
+                        <p>
+                            Unless otherwise stated, the website's branding,
+                            logo, text, design and original content belong to
+                            Sky Infra Industries or are used with permission.
+                        </p>
+                        <p>
+                            You may view and use the website for personal or
+                            legitimate business reference. You must not reproduce,
+                            republish, modify or commercially exploit website
+                            material without prior permission, except where
+                            permitted by applicable law.
+                        </p>
+                    </section>
+
+                    <section id="third-party">
+                        <h2>6. Third-party services and links</h2>
+                        <p>
+                            This website may link to external services such as
+                            email applications, WhatsApp or other third-party
+                            websites.
+                        </p>
+                        <p>
+                            These services are not controlled by Sky Infra Industries.
+                            We are not responsible for their content, availability,
+                            security, privacy practices or terms. Your use of them
+                            is at your own discretion and subject to their own
+                            conditions.
+                        </p>
+                    </section>
+
+                    <section id="liability">
+                        <h2>7. Limitation of liability</h2>
+                        <p>
+                            To the extent permitted by applicable law, Sky Infra
+                            Industries will not be responsible for losses arising
+                            from reliance on general website information, temporary
+                            website unavailability, technical interruptions or
+                            the use of third-party services.
+                        </p>
+                        <p>
+                            Nothing in these terms is intended to exclude or limit
+                            any liability or legal right that cannot lawfully be
+                            excluded or limited under applicable law.
+                        </p>
+                    </section>
+
+                    <section id="changes">
+                        <h2>8. Changes to these terms</h2>
+                        <p>
+                            We may revise these Terms and Conditions when necessary,
+                            including when the website, our business practices or
+                            applicable requirements change. Updates will be
+                            published on this page with a revised date.
+                        </p>
+                        <p>
+                            Your continued use of the website after updated terms
+                            are published will be subject to the revised terms,
+                            to the extent permitted by law.
+                        </p>
+                    </section>
+
+                    <section id="law">
+                        <h2>9. Applicable law</h2>
+                        <p>
+                            These terms are intended to be interpreted in accordance
+                            with the laws of India, subject to applicable legal
+                            requirements and the jurisdiction of competent courts.
+                        </p>
+                    </section>
+
+                    <section id="contact">
+                        <h2>10. Contact us</h2>
+                        <p>
+                            If you have any questions about these Terms and
+                            Conditions, you can contact us at:
+                        </p>
+                        <div class="legal-note">
+                            <strong>Sky Infra Industries</strong><br>
+                            Email:
+                            <a href="mailto:skyinfraindustries@gmail.com">skyinfraindustries@gmail.com</a>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" aria-label="Sky Infra Industries Home">
+                        <img src="images/sky-infra-logo.png" alt="Sky Infra Industries" width="240" height="120" loading="lazy">
+                    </a>
+                    <p>
+                        A construction materials supplier specialising in PVC pipes,
+                        HDPE pipes and essential materials for construction and
+                        infrastructure requirements.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Our Focus</h3>
+                    <ul>
+                        <li><a href="products.html">PVC Pipes</a></li>
+                        <li><a href="products.html">HDPE Pipes</a></li>
+                        <li><a href="products.html">Construction Materials</a></li>
+                        <li><a href="products.html">Infrastructure Supplies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Get In Touch</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Our Team</a></li>
+                        <li><a href="mailto:skyinfraindustries@gmail.com">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2026</span> Sky Infra Industries. All Rights Reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-and-conditions.html" aria-current="page">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+    <script src="script.js" defer></script>
+</body>
+</html>
